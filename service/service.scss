@@ -1,0 +1,46 @@
+%btn_global{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #0082F4;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFF;
+}
+@mixin text_style($f_size,$f_weight,$color){
+    font-size: $f_size;
+    font-weight: $f_weight;
+    color: $color;
+}
+$primary_color:#0082F4;
+%center{
+    display: flex;
+    align-items: center;
+}
+.service{
+    h2{
+        text-align: center;
+        @include text_style(48.44px,500 ,#000 )
+    }
+    &__list{
+        margin-top: 60px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &-item{
+            width: 324px;
+            text-align: center;
+            h4{
+                margin-top: 60px;
+                @include text_style(28px,500 ,#000 )
+            }
+            p{
+                line-height: 30px;
+                margin-top: 10px;
+                @include text_style(20px,400 ,#000 )
+            }
+        }
+    }
+}

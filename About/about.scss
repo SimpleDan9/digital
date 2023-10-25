@@ -1,0 +1,53 @@
+%btn_global{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #0082F4;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFF;
+}
+@mixin text_style($f_size,$f_weight,$color){
+    font-size: $f_size;
+    font-weight: $f_weight;
+    color: $color;
+}
+$primary_color:#0082F4;
+%center{
+    display: flex;
+    align-items: center;
+}
+.about{
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    &__image{
+        width: 486px;
+        height: 486px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__info{
+       max-width: 503px;
+       h4{
+        @include text_style(25px,500 ,$primary_color );
+       }
+       h2{
+        @include text_style(49px,700 ,#000 );
+       }
+       p{
+        @include text_style(20px,400 ,#000 );
+        opacity: 0.6;
+        margin-top: 20px;
+       }
+       .about_btn{
+        @extend %btn_global;
+        padding:20px 39px ;
+        margin-top: 30px;
+       }
+    }
+}

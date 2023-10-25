@@ -1,0 +1,52 @@
+%btn_global{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: #0082F4;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFF;
+}
+@mixin text_style($f_size,$f_weight,$color){
+    font-size: $f_size;
+    font-weight: $f_weight;
+    color: $color;
+}
+$primary_color:#0082F4;
+%center{
+    display: flex;
+    align-items: center;
+}
+
+.start{
+    background: rgba(232, 236, 255, 0.30);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        color: #058AFF;
+        font-size: 31.25px;
+        font-weight: 500;
+        line-height: normal;
+    }
+    p{
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    &__search{
+        border-radius: 10px;
+        border: 1px solid #058AFF;
+        opacity: 0.2;
+        width: 487px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       
+    }
+}

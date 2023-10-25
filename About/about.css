@@ -1,0 +1,49 @@
+.about__info .about_btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #0082F4;
+  font-size: 20px;
+  font-weight: 500;
+  color: #FFF;
+}
+
+.about {
+  padding: 150px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about__image {
+  width: 486px;
+  height: 486px;
+}
+.about__image img {
+  width: 100%;
+  height: 100%;
+}
+.about__info {
+  max-width: 503px;
+}
+.about__info h4 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0082F4;
+}
+.about__info h2 {
+  font-size: 49px;
+  font-weight: 700;
+  color: #000;
+}
+.about__info p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+.about__info .about_btn {
+  padding: 20px 39px;
+  margin-top: 30px;
+}/*# sourceMappingURL=about.css.map */
